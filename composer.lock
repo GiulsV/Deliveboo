@@ -64,16 +64,16 @@
         },
         {
             "name": "braintree/braintree_php",
-            "version": "6.9.0",
+            "version": "6.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/braintree/braintree_php.git",
-                "reference": "096984f01c03e47e053703fb159721cb77793587"
+                "reference": "e7f0b691e6b0b39bf5dad703d955d0318a67c367"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/braintree/braintree_php/zipball/096984f01c03e47e053703fb159721cb77793587",
-                "reference": "096984f01c03e47e053703fb159721cb77793587",
+                "url": "https://api.github.com/repos/braintree/braintree_php/zipball/e7f0b691e6b0b39bf5dad703d955d0318a67c367",
+                "reference": "e7f0b691e6b0b39bf5dad703d955d0318a67c367",
                 "shasum": ""
             },
             "require": {
@@ -107,9 +107,9 @@
             "description": "Braintree PHP Client Library",
             "support": {
                 "issues": "https://github.com/braintree/braintree_php/issues",
-                "source": "https://github.com/braintree/braintree_php/tree/6.9.0"
+                "source": "https://github.com/braintree/braintree_php/tree/6.9.1"
             },
-            "time": "2022-07-25T14:01:57+00:00"
+            "time": "2022-10-03T20:40:07+00:00"
         },
         {
             "name": "brick/math",

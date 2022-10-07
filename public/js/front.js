@@ -5770,6 +5770,12 @@ var render = function render() {
     attrs: {
       method: "post",
       enctype: "multipart/form-data"
+    },
+    on: {
+      submit: function submit($event) {
+        $event.preventDefault();
+        return _vm.myLog();
+      }
     }
   }, [_c("div", {
     staticClass: "mb-3"
@@ -5905,12 +5911,6 @@ var render = function render() {
     staticClass: "btn my_btn",
     attrs: {
       type: "submit"
-    },
-    on: {
-      click: function click($event) {
-        $event.preventDefault();
-        return _vm.myLog();
-      }
     }
   }, [_vm._v("Conferma e accedi al pagamento")])])]) : _vm.visible == false && _vm.formVisible == false ? _c("div", {
     staticClass: "text-center"
@@ -6138,15 +6138,17 @@ var render = function render() {
   }, [_c("div", {
     staticClass: "container"
   }, [_c("div", {
-    staticClass: "d-flex align-items-center p-4 text-center border-bottom border-5 rounded-0 myBorder"
-  }, [_c("div", {}, [_c("img", {
+    staticClass: "d-flex row align-items-center p-4 text-center border-bottom border-5 rounded-0 myBorder"
+  }, [_c("div", {
+    staticClass: "col-6"
+  }, [_c("img", {
     staticClass: "rounded-4 risto_img",
     attrs: {
       src: "/storage/".concat(_vm.arrRestInfo.img),
       alt: _vm.arrRestInfo.name
     }
   })]), _vm._v(" "), _c("div", {
-    staticClass: "px-5 text-start text-capitalize"
+    staticClass: "px-5 col-6 text-start text-capitalize"
   }, [_c("h1", [_vm._v("\n                " + _vm._s(_vm.arrRestInfo.name) + "\n                ")]), _vm._v(" "), _c("h3", [_vm._v("\n                    " + _vm._s(_vm.arrRestInfo.address) + "\n                ")])])]), _vm._v(" "), _c("div", {
     staticClass: "d-flex wrap justify-content-between"
   }, [_c("div", {
@@ -36508,7 +36510,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".heightScroll[data-v-c1f7c23a] {\n  height: 800px;\n}\n#showRestaurant[data-v-c1f7c23a] {\n  background-color: #ffe6d8;\n}\n.myBorder[data-v-c1f7c23a] {\n  border-color: #d43a1c !important;\n}\n.btn_color[data-v-c1f7c23a] {\n  background-color: #d43a1c;\n  color: white;\n}\n.btn_color[data-v-c1f7c23a]:hover {\n  background-color: #ff5735;\n  color: white;\n}\n.risto_img[data-v-c1f7c23a] {\n  width: 35rem;\n  box-shadow: 0 0.75rem 0.75rem rgba(0, 0, 0, 0.5) !important;\n}\n.wrap[data-v-c1f7c23a] {\n  flex-wrap: wrap;\n}", ""]);
+exports.push([module.i, ".heightScroll[data-v-c1f7c23a] {\n  height: 800px;\n}\n#showRestaurant[data-v-c1f7c23a] {\n  background-color: #ffe6d8;\n}\n.myBorder[data-v-c1f7c23a] {\n  border-color: #d43a1c !important;\n  margin-bottom: 15px;\n}\n.btn_color[data-v-c1f7c23a] {\n  background-color: #d43a1c;\n  color: white;\n}\n.btn_color[data-v-c1f7c23a]:hover {\n  background-color: #ff5735;\n  color: white;\n}\n.risto_img[data-v-c1f7c23a] {\n  max-width: 100%;\n  box-shadow: 0 0.75rem 0.75rem rgba(0, 0, 0, 0.5) !important;\n}\n.wrap[data-v-c1f7c23a] {\n  flex-wrap: wrap;\n}", ""]);
 
 // exports
 
@@ -53939,8 +53941,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\aless\OneDrive\Desktop\progetto_finale\resources\js\front.js */"./resources/js/front.js");
-module.exports = __webpack_require__(/*! C:\Users\aless\OneDrive\Desktop\progetto_finale\resources\sass\back.scss */"./resources/sass/back.scss");
+__webpack_require__(/*! C:\Users\UTENTE\Documents\Boolean Careers\Esercizi Boolean\PROGETTO FINALE\Deliveboo\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! C:\Users\UTENTE\Documents\Boolean Careers\Esercizi Boolean\PROGETTO FINALE\Deliveboo\resources\sass\back.scss */"./resources/sass/back.scss");
 
 
 /***/ })
